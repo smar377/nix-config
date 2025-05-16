@@ -10,7 +10,7 @@ $ sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemo
 ### 2. Clone the repository
 
 ```shell
-
+$ git clone git@github.com:smar377/nix-config.git
 ```
 
 ### 3. Apply your home configuration by issuing:
