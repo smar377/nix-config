@@ -2,7 +2,9 @@
   inputs,
   lib,
   system,
+  config,
   pkgs,
+  unstable,
   ...
 }: 
 
@@ -17,7 +19,6 @@
 
   xdg.enable = true;
 
-  
   home.packages = with pkgs; [
     # Development Tools and Languages
     devbox
@@ -28,7 +29,6 @@
     mtr
     sshuttle
     wget
-    wireguard-tools
 
     # Cloud and Infrastructure
     ansible
@@ -38,4 +38,5 @@
     kubectl
     terraform
     tflint
+  ];
 }
